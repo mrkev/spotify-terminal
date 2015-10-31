@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+var control = require('../src/control');
+
+program
+  .command('play [name]', 'search and play')
+  .command('.', 'play/pause track')
+  .command('..', 'next track')
+  .command('...', 'prvious track')
+  .command('info', 'display current track info')
+  .option('-v, --volume [N]', '[0..100] change volume')
+  .option('-b, --backward [N]', 'jump backward N seconds')
+  .option('-j, --jump [N]', 'jump to N seconds')
+  .option('-f, --forward [N]', 'jump forward N seconds')
+  .option('-s, --shuffle', 'Toggle shuffle')
+  .option('-r, --repeat', 'Toggle repeat');
+
+
+program.parse(process.argv);
+
+
+if (program.shuffle)  control('shuffle');
+if (program.repeat)   control('repeat');
+if (program.jump)     control('jump', program.jump);
+if (program.volume)   control('volume', program.volume);
+if (program.forward)  control('forward', program.forward);
+if (program.backward) control('rewind', program.backward);
+
+if (!process.argv.slice(2).length) {
+    program.help();
+}

@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+
+var program = require('commander').parse(process.argv);
+
+var control = require('../src/control');
+control('play/pause');

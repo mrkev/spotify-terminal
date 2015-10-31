@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+var program = require('commander').parse(process.argv);
+
+var control = require('../src/control');
+
+control('info', null, function (err, out) {
+  if (err) console.log("Couldn't get information for currently playing track.");
+  console.log(out);
+});
