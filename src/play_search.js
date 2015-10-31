@@ -83,7 +83,6 @@ var track_strings = function (tracks) {
 
   var maxTitleLength  = Math.max.apply(Math, tracks.map(function (t) {return t.name.length;}));
   var maxArtistLength = Math.max.apply(Math, tracks.map(function (t) {return t.artists[0].name.length;}));
-  console.log(maxTitleLength, maxArtistLength)
   return tracks.map(function (track, index) {
     var titleLengthDiff  = maxTitleLength  - track.name.length;
     var artistLengthDiff = maxArtistLength - track.artists[0].name.length;
