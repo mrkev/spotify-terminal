@@ -1,8 +1,8 @@
 # spotify-terminal
 
-Spotify without reaching out to the trackpad. 80.7% increase in productivity guaranteed![^1]
+Note: OSX Only.
 
-[^1]: [100.3% accurate](http://1.bp.blogspot.com/-UDrkX2ogEgE/VXfY9PmU8pI/AAAAAAAAIwE/Ry5U7tUF5mk/s1600/1.jpg)
+"This CLI increased my productivity by 87.6%!" - [Satisfied user](http://1.bp.blogspot.com/-UDrkX2ogEgE/VXfY9PmU8pI/AAAAAAAAIwE/Ry5U7tUF5mk/s1600/1.jpg)
 
 ## Installation
 
@@ -19,8 +19,6 @@ For all available commands run
 ```
 $ music --help
 ```
-
-Note: You can use either `music` or `spotify`.
 
 ##### Search and play
 

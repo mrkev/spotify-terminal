@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "Spotify music control, from the Terminal",
   "bin": {
-    "spotify": "./bin/music",
     "music": "./bin/music"
   },
   "dependencies": {
