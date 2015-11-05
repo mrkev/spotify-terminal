@@ -1,6 +1,6 @@
 {
   "name": "spotify-terminal",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Spotify music control, from the Terminal",
   "bin": {
     "music": "./bin/music"
