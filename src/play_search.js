@@ -1,11 +1,12 @@
 'use strict';
 /* global console, require, module */
 
-var rp = require('request-promise'),
-    colors  = require('colors'),
-    ellipsize = require('ellipsize'),
+var ellipsize = require('ellipsize'),
     inquirer = require('inquirer'),
-    control = require('./control');
+    control = require('./control'),
+    colors  = require('colors'),
+    Promise = require('es6-Promise').Promise,
+    rp = require('request-promise');
     
 module.exports = function (title) {
   look_for(title)
